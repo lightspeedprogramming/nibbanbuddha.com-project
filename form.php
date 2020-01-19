@@ -2,7 +2,7 @@
 	include_once 'con.php';
 	extract($_REQUEST);
 
-	$sql = "INSERT INTO registration_form (salutaion,name,country_code,mob,address,city,state,country,pin,gender,dob,landline_country_code,std_code,landline_no,email,education,occupation,designation,preffered_language,organization,contribution) VALUES ('$salutaion','$fn','$countrycode','$mob','$address','$city','$state','$country','$pin','$gender','$dob','$coutrycodelandline','$stdcode','$lno','$email','$education','$occupation','$designation','$preffered_language','$organization','$contribution')";
+	$sql = "INSERT INTO registration_form (salutation,name,country_code,mob,address,city,state,country,pin,gender,dob,landline_country_code,std_code,landline_no,email,education,occupation,designation,preffered_language,organization,contribution) VALUES ('$salutation','$fn','$countrycode','$mob','$address','$city','$state','$country','$pin','$gender','$dob','$coutrycodelandline','$stdcode','$lno','$email','$education','$occupation','$designation','$preffered_language','$organization','$contribution')";
 	
 	if (mysqli_query($conn, $sql)) {
 		echo "New Record Created Successfully";
